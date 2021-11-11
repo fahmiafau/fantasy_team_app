@@ -1,5 +1,3 @@
-require 'net/http'
-
 class PlayersFetcherJob < ApplicationJob
   queue_as :default
 
