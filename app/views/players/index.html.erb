@@ -1,0 +1,20 @@
+ <table>
+  <tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Team</th>
+    <th>Price</th>
+    <th>Is Constructor</th>
+  </tr>
+  <% @players.each do |player| %>
+    <tr>
+      <td><%= player.id %></td>
+      <td><%= player.first_name %></td>
+      <td><%= player.last_name %></td>
+      <td><%= player.team.name %></td>
+      <td>$<%= '%.2f' % player.price %> m</td>
+      <td><%= player.is_constructor ? "v" : "x" %></td>
+    </tr>
+  <% end %>
+</table> 

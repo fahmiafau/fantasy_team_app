@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 32px;
+  background-color: rgb(225, 6, 0);
+  color: white;
+}
+
+.nav_link_default {
+  text-decoration: none;
+  margin: 0 4px;
+  color: white;
+}
