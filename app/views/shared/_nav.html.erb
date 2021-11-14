@@ -1,4 +1,7 @@
 <nav class="navbar">
+  <% if user_signed_in? %>
+    <span class="nav_link_default"><%= current_user.email %></span>
+  <% end %>
   <%= link_to 'Players', players_path, class: "nav_link_default" %>
   <%= link_to 'Teams', teams_path, class: "nav_link_default" %>
 </nav>
